@@ -28,13 +28,14 @@ const long double PI = acos(-1);
 const long double EPS = 1e-7;
 // fixed << setprecision()
 void solve() {
-   int x , y , z; cin >> x >> y >> z;
-   if (x == y || y == z || x == z){
-    cout <<"YES"<<"\n";
-   }
-   else {
-    cout <<"NO"<<"\n";
-   }
+    int x, y, z; cin >> x >> y >> z;
+
+    if (x + y > z && x + z > y && y + z > x) {
+        cout << "YES\n";
+    }
+    else {
+        cout << "NO\n";
+    }
 }
 /*
 */
