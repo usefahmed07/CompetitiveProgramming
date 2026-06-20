@@ -1,8 +1,8 @@
 /** 
-    F. Matrix Bel Lotus
+    A. Love Your Llama
  *  author:  BetterCallUssif
  *  created: 20.06.2026
-    URL : https://codeforces.com/gym/106094/problem/A
+    URL : https://codeforces.com/gym/103895/problem/A
 **/
 /// I am snatchin chains and burnin' tattoos
 #include <bits/stdc++.h>
@@ -28,20 +28,16 @@ const long double PI = acos(-1);
 const long double EPS = 1e-7;
 // fixed << setprecision()
 void solve() {
-    int tt;
-    cin >> tt;
+    int x;
+    int mn = 1e9, mx = -1e9;
 
-    while (tt--) {
-        int a, b, c;
-        cin >> a >> b >> c;
-
-        if (a > b)
-            cout << "Win\n";
-        else if (c > b)
-            cout << "WIN\n";
-        else
-            cout << "nowin\n";
+    for (int i = 0; i < 7; i++) {
+        cin >> x;
+        mn = min(mn, x);
+        mx = max(mx, x);
     }
+
+    cout << (mx - mn);
 }
 /*
 */
